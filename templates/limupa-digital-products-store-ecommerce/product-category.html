@@ -1,0 +1,24 @@
+<!-- product-category.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Product Categories</h2>
+<ul>
+{% for category in categories %}
+    <li><a href="{% url 'product_list' category.slug %}">{{ category.name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+
+<!-- blog-category.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Blog Categories</h2>
+<ul>
+{% for category in categories %}
+    <li><a href="{% url 'blog_list' category.slug %}">{{ category.name }} ({{ category.num_blogs }})</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,26 @@
+task
+limupa
+
+blog post
+
+product
+file:///Users/harry/Desktop/limupa-digital-products-store-ecommerce/shop-left-sidebar.html
+
+blog
+file:///Users/harry/Desktop/limupa-digital-products-store-ecommerce/blog-list-left-sidebar.html
+
+
+1. postlar ro'yhati chiqadigan, post qo'shadi   gan page qilish (is_superuser bolsa qo'sha olsin)
+
+2. product va product-category page larini qilish, product detail ham bolsin
+ - product list da rasmi, narxi, nomi boladi
+ - product detail da rasmi, narxi, nomi, description ni boladi
+
+3. file:///Users/harry/Desktop/limupa-digital-products-store-ecommerce/blog-details-left-sidebar.html#
+ - product category ni bosganda, o'shanga tegishli productlar chiqishi kk
+ - blog category ni bosganda (category listi chiqqanda, ichidagi bloglar soni ham chiqishi kk), o'shanga tegishli bloglar chiqishi kk
+
+4. post va product uchun comment yozish
+
+5. projectni githubga yuklab linkini yuborish
+

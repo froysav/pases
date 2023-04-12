@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" action="{% url 'add_blog' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+          <ul>
+            <li>
+              <label for="name">Title:</label>
+              <input type="text" id="name" name="title" />
+            </li>
+            <li>
+              <label for="mail">Image:</label>
+              <input type="file" id="mail" name="image" />
+            </li>
+            <li>
+                <label for="sele">Blogs:</label>
+                <select id="sele" name="category">
+                    {% for categ    ory in categories %}
+                        <option value="{{ category.id }}" name="category">{{ category }}</option>
+                    {% endfor %}
+                </select>
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="body"></textarea>
+            </li>
+          </ul>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
